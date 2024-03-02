@@ -1,3 +1,9 @@
+def is_prime(intt: int) -> bool:
+	for i in range(2, intt):
+		if intt//i == intt/i:
+			return False
+	else:
+		return True
 
 
 def number_sum(num: int) -> int:
@@ -9,6 +15,7 @@ def number_sum(num: int) -> int:
 	return sum
 
 def main():
+	print(is_prime(10))
 	print(number_sum(123))
 
 
